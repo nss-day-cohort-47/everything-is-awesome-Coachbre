@@ -2,9 +2,11 @@ console.log("hello beautiful")
 import { loadLegos, useLegos } from './legos/LegoData.js';
 import { makeLegoList } from './legos/LegoList.js';
 import { dropDown } from './legos/LegoDetail.js';
+import { searchBar } from './legos/LegoDetail.js';
 
 const navElement = document.querySelector("nav");
 const divElement = document.querySelector("#dropDown");
+const SearchBarElement = document.querySelector("#searchBar");
 
 navElement.addEventListener("click", (event) => {
 	if (event.target.id === "showRed") {
@@ -16,6 +18,13 @@ navElement.addEventListener("click", (event) => {
 	}
 	
 })
+
+SearchBarElement.addEventListener("keyup", e => { 
+	const searchString = e.target.value; 
+})
+const filterIDs = hpCharacters.filter(character => { return true; });
+
+
 
 
 divElement.addEventListener("change", (event) => {
@@ -85,6 +94,11 @@ const showDropDown = () => {
 	dropDownElement.innerHTML = dropDown();
 }
 
+
+const showSearchBar = () => {
+	const SearchBarElement = document.querySelector('#searchBar');
+	searchBarElement.innerHTML = searchBar();
+}
 
 
 

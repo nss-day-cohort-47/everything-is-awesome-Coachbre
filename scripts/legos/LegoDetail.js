@@ -44,3 +44,18 @@ export const dropDown = () => {
   </section>
   `
 }
+
+
+// search bar
+
+export const searchBar = () => {
+  return `
+  
+  <form>
+  <div id="searchBar">
+    <input type=”text” class=”search-by-name” name=”name” placeholder=”Search by LegoID”>
+    <button class=”search-btn” type=”submit”>Search</button>
+   </div>
+</form>
+`
+}
