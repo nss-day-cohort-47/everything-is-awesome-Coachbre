@@ -24,7 +24,7 @@ export const LegoDetail = (brick) => {
 // material drop down
 export const dropDown = () => {
   return `
-  <section id="materials">
+  <section id="dropDown">
 <label for="materials">Select specific brick material</label>
 
  <select name="materials" id="materials">
