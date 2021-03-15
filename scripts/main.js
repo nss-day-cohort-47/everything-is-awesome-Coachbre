@@ -19,10 +19,6 @@ navElement.addEventListener("click", (event) => {
 	
 })
 
-SearchBarElement.addEventListener("keyup", e => { 
-	const searchString = e.target.value; 
-})
-const filterIDs = hpCharacters.filter(character => { return true; });
 
 
 
@@ -96,7 +92,7 @@ const showDropDown = () => {
 
 
 const showSearchBar = () => {
-	const SearchBarElement = document.querySelector('#searchBar');
+	const searchBarElement = document.querySelector('#searchBar');
 	searchBarElement.innerHTML = searchBar();
 }
 
